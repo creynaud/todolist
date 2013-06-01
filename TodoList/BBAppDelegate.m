@@ -8,6 +8,7 @@
 
 #import "BBAppDelegate.h"
 #import "BBTodosTableViewController.h"
+#import "BBAboutViewController.h"
 
 @implementation BBAppDelegate
 
@@ -40,6 +41,12 @@
     UINavigationController *recentsNavigationController = [[UINavigationController alloc] initWithRootViewController:recentsTableViewController];
     recentsNavigationController.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemRecents tag:2];
     [tabControllers addObject:recentsNavigationController];
+
+    // About
+    BBAboutViewController *aboutViewController = [[BBAboutViewController alloc] initWithNibName:@"BBAboutViewController" bundle:nil];
+    UINavigationController *aboutNavigationController = [[UINavigationController alloc] initWithRootViewController:aboutViewController];
+    aboutNavigationController.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedStringFromTable(@"About", @"Application", nil) image:[UIImage imageNamed:@"About"] tag:3];
+    [tabControllers addObject:aboutNavigationController];
     
     tabBarController.viewControllers = tabControllers;
     tabBarController.selectedViewController = todosNavigationController;

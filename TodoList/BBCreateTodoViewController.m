@@ -6,6 +6,8 @@
 //  Copyright (c) 2013 BabelBytes. All rights reserved.
 //
 
+#import <QuartzCore/QuartzCore.h>
+
 #import "BBCreateTodoViewController.h"
 
 @interface BBCreateTodoViewController ()
@@ -58,9 +60,9 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     if (section == 0) {
-        return NSLocalizedStringFromTable(@"Description", @"Application", nil);
-    } else if (section == 1) {
         return NSLocalizedStringFromTable(@"DueDate", @"Application", nil);
+    } else if (section == 1) {
+        return NSLocalizedStringFromTable(@"Description", @"Application", nil);
     }
     return nil;
 }
@@ -70,6 +72,16 @@
     return 1;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section == 0) {
+        return 217;
+    } else if (indexPath.section == 1) {
+        return 90;
+    }
+    return 0;
+}
+
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {    
     static NSString *CellIdentifierTitle = @"TodoTitleCell";
@@ -78,18 +90,22 @@
     if (indexPath.section == 0) {
         cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifierTitle];
         if (cell == nil) {
-            [[NSBundle mainBundle] loadNibNamed:@"BBTodoTitleTableViewCell" owner:self options:nil];
-            cell = self.todoTitleCell;
-            self.todoTitleCell = nil;
-        }
-    } else if (indexPath.section == 1) {
-        cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifierDate];
-        if (cell == nil) {
             [[NSBundle mainBundle] loadNibNamed:@"BBTodoDateTableViewCell" owner:self options:nil];
             cell = self.todoDatePickerCell;
             self.todoDatePickerCell = nil;
         }
+    } else if (indexPath.section == 1) {
+        cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifierDate];
+        if (cell == nil) {
+            [[NSBundle mainBundle] loadNibNamed:@"BBTodoTitleTableViewCell" owner:self options:nil];
+            cell = self.todoTitleCell;
+            self.todoTitleCell = nil;
+            UITextView *textView = [cell viewWithTag:1];
+            textView.layer.borderColor = [UIColor blackColor].CGColor;
+            textView.layer.borderWidth = 1.0;
+        }
     }
+    cell.backgroundView = [[UIView alloc] initWithFrame:CGRectZero];
     return cell;
 }
 
