@@ -31,7 +31,7 @@
     todosNavigationController.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedStringFromTable(@"Todos", @"Application", nil) image:[UIImage imageNamed:@"Todos"] tag:0];
     [tabControllers addObject:todosNavigationController];
     
-    // Profile
+    // Recents
     BBRecentsTableViewController *recentsTableViewController = [[BBRecentsTableViewController alloc] initWithNibName:@"BBRecentsTableViewController" bundle:nil];
     UINavigationController *recentsNavigationController = [[UINavigationController alloc] initWithRootViewController:recentsTableViewController];
     recentsNavigationController.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemRecents tag:1];

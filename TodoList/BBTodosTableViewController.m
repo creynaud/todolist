@@ -7,7 +7,6 @@
 //
 
 #import "BBTodosTableViewController.h"
-#import "BBTodoDetailViewController.h"
 #import "BBCreateTodoViewController.h"
 #import "BBModel.h"
 #import "BBDateUtils.h"

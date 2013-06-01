@@ -18,6 +18,7 @@
 		F1245BA3175A648700D44C51 /* BBDateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F1245BA2175A648600D44C51 /* BBDateUtils.m */; };
 		F1245BA9175A7B5800D44C51 /* BBRecentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1245BA7175A7B5700D44C51 /* BBRecentsTableViewController.m */; };
 		F1245BAA175A7B5800D44C51 /* BBRecentsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1245BA8175A7B5700D44C51 /* BBRecentsTableViewController.xib */; };
+		F1245BAD175A7F9800D44C51 /* Application.strings in Resources */ = {isa = PBXBuildFile; fileRef = F1245BAB175A7F9800D44C51 /* Application.strings */; };
 		F14F803B175336D000D379EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F14F803A175336D000D379EF /* UIKit.framework */; };
 		F14F803D175336D000D379EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F14F803C175336D000D379EF /* Foundation.framework */; };
 		F14F803F175336D000D379EF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F14F803E175336D000D379EF /* CoreGraphics.framework */; };
@@ -69,6 +70,14 @@
 		F1245BA6175A7B5600D44C51 /* BBRecentsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBRecentsTableViewController.h; sourceTree = "<group>"; };
 		F1245BA7175A7B5700D44C51 /* BBRecentsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBRecentsTableViewController.m; sourceTree = "<group>"; };
 		F1245BA8175A7B5700D44C51 /* BBRecentsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BBRecentsTableViewController.xib; sourceTree = "<group>"; };
+		F1245BAC175A7F9800D44C51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Application.strings; sourceTree = "<group>"; };
+		F1245BAE175A7FAB00D44C51 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Application.strings; sourceTree = "<group>"; };
+		F1245BAF175A7FB800D44C51 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Application.strings; sourceTree = "<group>"; };
+		F1245BB0175A7FB800D44C51 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F1245BB1175A7FB800D44C51 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F1245BB2175A7FC100D44C51 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Application.strings; sourceTree = "<group>"; };
+		F1245BB3175A7FC100D44C51 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F1245BB4175A7FC100D44C51 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F14F8037175336D000D379EF /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F14F803A175336D000D379EF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F14F803C175336D000D379EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -192,6 +201,7 @@
 		F14F8041175336D000D379EF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F1245BAB175A7F9800D44C51 /* Application.strings */,
 				F14F8042175336D000D379EF /* TodoList-Info.plist */,
 				F14F8043175336D000D379EF /* InfoPlist.strings */,
 				F14F8046175336D000D379EF /* main.m */,
@@ -288,6 +298,9 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				fr,
+				de,
+				es,
 			);
 			mainGroup = F14F802E175336D000D379EF;
 			productRefGroup = F14F8038175336D000D379EF /* Products */;
@@ -320,6 +333,7 @@
 				F1245B92175A510000D44C51 /* BBAboutViewController.xib in Resources */,
 				F1245B94175A524100D44C51 /* babel.png in Resources */,
 				F1245BAA175A7B5800D44C51 /* BBRecentsTableViewController.xib in Resources */,
+				F1245BAD175A7F9800D44C51 /* Application.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,10 +400,23 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		F1245BAB175A7F9800D44C51 /* Application.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1245BAC175A7F9800D44C51 /* en */,
+				F1245BAE175A7FAB00D44C51 /* fr */,
+				F1245BAF175A7FB800D44C51 /* de */,
+				F1245BB2175A7FC100D44C51 /* es */,
+			);
+			name = Application.strings;
+			sourceTree = "<group>";
+		};
 		F14F8043175336D000D379EF /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F14F8044175336D000D379EF /* en */,
+				F1245BB0175A7FB800D44C51 /* de */,
+				F1245BB3175A7FC100D44C51 /* es */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -398,6 +425,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				F14F8062175336D000D379EF /* en */,
+				F1245BB1175A7FB800D44C51 /* de */,
+				F1245BB4175A7FC100D44C51 /* es */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

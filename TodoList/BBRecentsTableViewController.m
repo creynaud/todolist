@@ -10,7 +10,6 @@
 #import "BBCreateTodoViewController.h"
 #import "BBModel.h"
 #import "BBDateUtils.h"
-#import "BBTodoDetailViewController.h"
 
 @interface BBRecentsTableViewController ()
 
