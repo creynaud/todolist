@@ -128,7 +128,7 @@
     if ([self.allRecents count] >= MAX_RECENTS) {
         [self.allRecents removeLastObject];
     }
-    [self.allRecents addObject:todo];
+    [self.allRecents insertObject:todo atIndex:0];
 }
 
 @end

@@ -23,15 +23,6 @@
 
 @implementation BBTodosTableViewController
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -39,9 +30,6 @@
     self.title = NSLocalizedStringFromTable(@"Todos", @"Application", nil);
 
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(add)];
-
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -133,7 +121,6 @@
     cell.textLabel.text = todo.description;
     cell.detailTextLabel.text = [BBDateUtils shortLocalizedStringFromDate:todo.dueDate];
     cell.userInteractionEnabled = YES;
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 
     return cell;
 }
@@ -173,8 +160,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    BBTodoDetailViewController *detailViewController = [[BBTodoDetailViewController alloc] initWithNibName:@"BBTodoDetailViewController" bundle:nil];
-    [self.navigationController pushViewController:detailViewController animated:YES];
+    // Do nothing for now
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end

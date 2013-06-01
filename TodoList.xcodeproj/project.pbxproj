@@ -16,6 +16,8 @@
 		F1245B9A175A5EEB00D44C51 /* BBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1245B99175A5EEA00D44C51 /* BBModel.m */; };
 		F1245B9D175A5F0A00D44C51 /* BBTodo.m in Sources */ = {isa = PBXBuildFile; fileRef = F1245B9C175A5F0900D44C51 /* BBTodo.m */; };
 		F1245BA3175A648700D44C51 /* BBDateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F1245BA2175A648600D44C51 /* BBDateUtils.m */; };
+		F1245BA9175A7B5800D44C51 /* BBRecentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1245BA7175A7B5700D44C51 /* BBRecentsTableViewController.m */; };
+		F1245BAA175A7B5800D44C51 /* BBRecentsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1245BA8175A7B5700D44C51 /* BBRecentsTableViewController.xib */; };
 		F14F803B175336D000D379EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F14F803A175336D000D379EF /* UIKit.framework */; };
 		F14F803D175336D000D379EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F14F803C175336D000D379EF /* Foundation.framework */; };
 		F14F803F175336D000D379EF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F14F803E175336D000D379EF /* CoreGraphics.framework */; };
@@ -64,6 +66,9 @@
 		F1245B9C175A5F0900D44C51 /* BBTodo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTodo.m; sourceTree = "<group>"; };
 		F1245BA1175A648600D44C51 /* BBDateUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBDateUtils.h; sourceTree = "<group>"; };
 		F1245BA2175A648600D44C51 /* BBDateUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBDateUtils.m; sourceTree = "<group>"; };
+		F1245BA6175A7B5600D44C51 /* BBRecentsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBRecentsTableViewController.h; sourceTree = "<group>"; };
+		F1245BA7175A7B5700D44C51 /* BBRecentsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBRecentsTableViewController.m; sourceTree = "<group>"; };
+		F1245BA8175A7B5700D44C51 /* BBRecentsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BBRecentsTableViewController.xib; sourceTree = "<group>"; };
 		F14F8037175336D000D379EF /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F14F803A175336D000D379EF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F14F803C175336D000D379EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -165,6 +170,9 @@
 				F14F80741753377A00D379EF /* BBTodosTableViewController.h */,
 				F14F80751753377A00D379EF /* BBTodosTableViewController.m */,
 				F14F80761753377A00D379EF /* BBTodosTableViewController.xib */,
+				F1245BA6175A7B5600D44C51 /* BBRecentsTableViewController.h */,
+				F1245BA7175A7B5700D44C51 /* BBRecentsTableViewController.m */,
+				F1245BA8175A7B5700D44C51 /* BBRecentsTableViewController.xib */,
 				F14F8091175A3D9C00D379EF /* BBCreateTodoViewController.h */,
 				F14F8092175A3D9C00D379EF /* BBCreateTodoViewController.m */,
 				F14F8093175A3D9C00D379EF /* BBCreateTodoViewController.xib */,
@@ -311,6 +319,7 @@
 				F1245B8D175A50D000D44C51 /* About.png in Resources */,
 				F1245B92175A510000D44C51 /* BBAboutViewController.xib in Resources */,
 				F1245B94175A524100D44C51 /* babel.png in Resources */,
+				F1245BAA175A7B5800D44C51 /* BBRecentsTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +363,7 @@
 				F1245B9A175A5EEB00D44C51 /* BBModel.m in Sources */,
 				F1245B9D175A5F0A00D44C51 /* BBTodo.m in Sources */,
 				F1245BA3175A648700D44C51 /* BBDateUtils.m in Sources */,
+				F1245BA9175A7B5800D44C51 /* BBRecentsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

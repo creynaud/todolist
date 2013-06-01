@@ -9,6 +9,7 @@
 #import "BBAppDelegate.h"
 #import "BBTodosTableViewController.h"
 #import "BBAboutViewController.h"
+#import "BBRecentsTableViewController.h"
 
 @implementation BBAppDelegate
 
@@ -31,7 +32,7 @@
     [tabControllers addObject:todosNavigationController];
     
     // Profile
-    BBTodosTableViewController *recentsTableViewController = [[BBTodosTableViewController alloc] initWithNibName:@"BBTodosTableViewController" bundle:nil];
+    BBRecentsTableViewController *recentsTableViewController = [[BBRecentsTableViewController alloc] initWithNibName:@"BBRecentsTableViewController" bundle:nil];
     UINavigationController *recentsNavigationController = [[UINavigationController alloc] initWithRootViewController:recentsTableViewController];
     recentsNavigationController.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemRecents tag:1];
     [tabControllers addObject:recentsNavigationController];
