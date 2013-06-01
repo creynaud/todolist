@@ -9,6 +9,13 @@
 #import "BBTodosTableViewController.h"
 #import "BBTodoDetailViewController.h"
 #import "BBCreateTodoViewController.h"
+#import "BBModel.h"
+#import "BBDateUtils.h"
+
+#define OVERDUE_SECTION 0
+#define TODAY_SECTION 1
+#define TOMORROW_SECTION 2
+#define LATER_SECTION 3
 
 @interface BBTodosTableViewController ()
 
@@ -37,6 +44,12 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+
+    [[self tableView] reloadData];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -59,13 +72,13 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     switch (section) {
-        case 0:
+        case OVERDUE_SECTION:
             return NSLocalizedStringFromTable(@"Overdue", @"Application", nil);
-        case 1:
+        case TODAY_SECTION:
             return NSLocalizedStringFromTable(@"Today", @"Application", nil);
-        case 2:
+        case TOMORROW_SECTION:
             return NSLocalizedStringFromTable(@"Tomorrow", @"Application", nil);
-        case 3:
+        case LATER_SECTION:
             return NSLocalizedStringFromTable(@"Later", @"Application", nil);
         default:
             return nil;
@@ -74,7 +87,19 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 4;
+    BBModel *model = [BBModel sharedModel];
+    switch (section) {
+        case OVERDUE_SECTION:
+            return [[model todosOverdue] count];
+        case TODAY_SECTION:
+            return [[model todosForToday] count];
+        case TOMORROW_SECTION:
+            return [[model todosForTomorrow] count];
+        case LATER_SECTION:
+            return [[model todosForLater] count];
+        default:
+            return 0;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -85,33 +110,64 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
     }
 
+    BBTodo *todo = nil;
+    BBModel *model = [BBModel sharedModel];
+    switch (indexPath.section) {
+        case OVERDUE_SECTION:
+            todo = [[model todosOverdue] objectAtIndex:indexPath.row];
+            break;
+        case TODAY_SECTION:
+            todo = [[model todosForToday] objectAtIndex:indexPath.row];
+            break;
+        case TOMORROW_SECTION:
+            todo = [[model todosForTomorrow] objectAtIndex:indexPath.row];
+            break;
+        case LATER_SECTION:
+            todo = [[model todosForLater] objectAtIndex:indexPath.row];
+            break;
+        default:
+            return nil;
+    }
+
     // Configure the cell...
-    cell.textLabel.text = @"A todo task";
-    cell.detailTextLabel.text = @"2pm";
+    cell.textLabel.text = todo.description;
+    cell.detailTextLabel.text = [BBDateUtils shortLocalizedStringFromDate:todo.dueDate];
     cell.userInteractionEnabled = YES;
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 
     return cell;
 }
 
-// Override to support conditional editing of the table view.
-/* - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Return NO if you do not want the specified item to be editable.
     return YES;
-} */
+}
 
-// Override to support editing the table view.
-/* - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
+        BBTodo *todo = nil;
+        BBModel *model = [BBModel sharedModel];
+        switch (indexPath.section) {
+            case OVERDUE_SECTION:
+                todo = [[model todosOverdue] objectAtIndex:indexPath.row];
+                break;
+            case TODAY_SECTION:
+                todo = [[model todosForToday] objectAtIndex:indexPath.row];
+                break;
+            case TOMORROW_SECTION:
+                todo = [[model todosForTomorrow] objectAtIndex:indexPath.row];
+                break;
+            case LATER_SECTION:
+                todo = [[model todosForLater] objectAtIndex:indexPath.row];
+                break;
+            default:
+                return;
+        }
+        [model removeTodo:todo];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }
-} */
+}
 
 #pragma mark - Table view delegate
 

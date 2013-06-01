@@ -29,23 +29,17 @@
     UINavigationController *todosNavigationController = [[UINavigationController alloc] initWithRootViewController:todosTableViewController];
     todosNavigationController.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedStringFromTable(@"Todos", @"Application", nil) image:[UIImage imageNamed:@"Todos"] tag:0];
     [tabControllers addObject:todosNavigationController];
-
-    // Important
-    BBTodosTableViewController *importantTableViewController = [[BBTodosTableViewController alloc] initWithNibName:@"BBTodosTableViewController" bundle:nil];
-    UINavigationController *importantNavigationController = [[UINavigationController alloc] initWithRootViewController:importantTableViewController];
-    importantNavigationController.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedStringFromTable(@"Important", @"Application", nil) image:[UIImage imageNamed:@"Important"] tag:1];
-    [tabControllers addObject:importantNavigationController];
     
     // Profile
     BBTodosTableViewController *recentsTableViewController = [[BBTodosTableViewController alloc] initWithNibName:@"BBTodosTableViewController" bundle:nil];
     UINavigationController *recentsNavigationController = [[UINavigationController alloc] initWithRootViewController:recentsTableViewController];
-    recentsNavigationController.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemRecents tag:2];
+    recentsNavigationController.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemRecents tag:1];
     [tabControllers addObject:recentsNavigationController];
 
     // About
     BBAboutViewController *aboutViewController = [[BBAboutViewController alloc] initWithNibName:@"BBAboutViewController" bundle:nil];
     UINavigationController *aboutNavigationController = [[UINavigationController alloc] initWithRootViewController:aboutViewController];
-    aboutNavigationController.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedStringFromTable(@"About", @"Application", nil) image:[UIImage imageNamed:@"About"] tag:3];
+    aboutNavigationController.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedStringFromTable(@"About", @"Application", nil) image:[UIImage imageNamed:@"About"] tag:2];
     [tabControllers addObject:aboutNavigationController];
     
     tabBarController.viewControllers = tabControllers;

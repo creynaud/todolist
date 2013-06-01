@@ -9,6 +9,10 @@
 #import <QuartzCore/QuartzCore.h>
 
 #import "BBCreateTodoViewController.h"
+#import "BBModel.h"
+
+#define DATE_SECTION 0
+#define DESCRIPTION_SECTION 1
 
 @interface BBCreateTodoViewController ()
 
@@ -48,6 +52,18 @@
 
 - (void)done
 {
+    UITableViewCell *descriptionCell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:DESCRIPTION_SECTION]];
+    UITextField *descriptionTextField = (UITextField *) [descriptionCell viewWithTag:1];
+    NSString *description = descriptionTextField.text;
+
+    UITableViewCell *dateCell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:DATE_SECTION]];
+    UIDatePicker *datePicker = (UIDatePicker *) [dateCell viewWithTag:1];
+    NSDate *date = datePicker.date;
+
+    BBTodo *todo = [[BBTodo alloc] init];
+    todo.description = description;
+    todo.dueDate = date;
+    [[BBModel sharedModel] addTodo:todo];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
@@ -59,9 +75,9 @@
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    if (section == 0) {
+    if (section == DATE_SECTION) {
         return NSLocalizedStringFromTable(@"DueDate", @"Application", nil);
-    } else if (section == 1) {
+    } else if (section == DESCRIPTION_SECTION) {
         return NSLocalizedStringFromTable(@"Description", @"Application", nil);
     }
     return nil;
@@ -73,9 +89,9 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.section == 0) {
+    if (indexPath.section == DATE_SECTION) {
         return 217;
-    } else if (indexPath.section == 1) {
+    } else if (indexPath.section == DESCRIPTION_SECTION) {
         return 90;
     }
     return 0;
@@ -87,20 +103,20 @@
     static NSString *CellIdentifierTitle = @"TodoTitleCell";
     static NSString *CellIdentifierDate = @"TodoDatePickerCell";
     UITableViewCell *cell = nil;
-    if (indexPath.section == 0) {
+    if (indexPath.section == DATE_SECTION) {
         cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifierTitle];
         if (cell == nil) {
             [[NSBundle mainBundle] loadNibNamed:@"BBTodoDateTableViewCell" owner:self options:nil];
             cell = self.todoDatePickerCell;
             self.todoDatePickerCell = nil;
         }
-    } else if (indexPath.section == 1) {
+    } else if (indexPath.section == DESCRIPTION_SECTION) {
         cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifierDate];
         if (cell == nil) {
             [[NSBundle mainBundle] loadNibNamed:@"BBTodoTitleTableViewCell" owner:self options:nil];
             cell = self.todoTitleCell;
             self.todoTitleCell = nil;
-            UITextView *textView = [cell viewWithTag:1];
+            UITextView *textView = (UITextView *)[cell viewWithTag:1];
             textView.layer.borderColor = [UIColor blackColor].CGColor;
             textView.layer.borderWidth = 1.0;
         }
