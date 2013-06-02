@@ -28,7 +28,7 @@
     // Todos
     BBTodosTableViewController *todosTableViewController = [[BBTodosTableViewController alloc] initWithNibName:@"BBTodosTableViewController" bundle:nil];
     UINavigationController *todosNavigationController = [[UINavigationController alloc] initWithRootViewController:todosTableViewController];
-    todosNavigationController.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedStringFromTable(@"Todos", @"Application", nil) image:[UIImage imageNamed:@"Todos"] tag:0];
+    todosNavigationController.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"Todos", nil) image:[UIImage imageNamed:@"Todos"] tag:0];
     [tabControllers addObject:todosNavigationController];
     
     // Recents
@@ -40,7 +40,7 @@
     // About
     BBAboutViewController *aboutViewController = [[BBAboutViewController alloc] initWithNibName:@"BBAboutViewController" bundle:nil];
     UINavigationController *aboutNavigationController = [[UINavigationController alloc] initWithRootViewController:aboutViewController];
-    aboutNavigationController.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedStringFromTable(@"About", @"Application", nil) image:[UIImage imageNamed:@"About"] tag:2];
+    aboutNavigationController.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"About", nil) image:[UIImage imageNamed:@"About"] tag:2];
     [tabControllers addObject:aboutNavigationController];
     
     tabBarController.viewControllers = tabControllers;

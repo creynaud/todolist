@@ -18,9 +18,9 @@
 {
     [super viewDidLoad];
     
-    self.title = NSLocalizedStringFromTable(@"About", @"Application", nil);
+    self.title = NSLocalizedString(@"About", nil);
     
-    self.textView.text = NSLocalizedStringFromTable(@"AboutText", @"Application", nil);
+    self.textView.text = NSLocalizedString(@"AboutText", nil);
 }
 
 - (void)didReceiveMemoryWarning

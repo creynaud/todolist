@@ -26,7 +26,7 @@
 {
     [super viewDidLoad];
 
-    self.title = NSLocalizedStringFromTable(@"Todos", @"Application", nil);
+    self.title = NSLocalizedString(@"Todos", nil);
 
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(add)];
 }
@@ -60,13 +60,13 @@
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     switch (section) {
         case OVERDUE_SECTION:
-            return NSLocalizedStringFromTable(@"Overdue", @"Application", nil);
+            return NSLocalizedString(@"Overdue", nil);
         case TODAY_SECTION:
-            return NSLocalizedStringFromTable(@"Today", @"Application", nil);
+            return NSLocalizedString(@"Today", nil);
         case TOMORROW_SECTION:
-            return NSLocalizedStringFromTable(@"Tomorrow", @"Application", nil);
+            return NSLocalizedString(@"Tomorrow", nil);
         case LATER_SECTION:
-            return NSLocalizedStringFromTable(@"Later", @"Application", nil);
+            return NSLocalizedString(@"Later", nil);
         default:
             return nil;
     }

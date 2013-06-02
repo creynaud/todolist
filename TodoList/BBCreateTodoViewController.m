@@ -33,7 +33,7 @@
 {
     [super viewDidLoad];
 
-    self.title = NSLocalizedStringFromTable(@"AddTodo", @"Application", nil);
+    self.title = NSLocalizedString(@"AddTodo", nil);
 
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancel)];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(done)];
@@ -76,9 +76,9 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     if (section == DATE_SECTION) {
-        return NSLocalizedStringFromTable(@"DueDate", @"Application", nil);
+        return NSLocalizedString(@"DueDate", nil);
     } else if (section == DESCRIPTION_SECTION) {
-        return NSLocalizedStringFromTable(@"Description", @"Application", nil);
+        return NSLocalizedString(@"Description", nil);
     }
     return nil;
 }

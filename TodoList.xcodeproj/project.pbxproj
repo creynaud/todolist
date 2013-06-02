@@ -12,14 +12,14 @@
 		F1245B91175A510000D44C51 /* BBAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1245B8F175A510000D44C51 /* BBAboutViewController.m */; };
 		F1245B92175A510000D44C51 /* BBAboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1245B90175A510000D44C51 /* BBAboutViewController.xib */; };
 		F1245B94175A524100D44C51 /* babel.png in Resources */ = {isa = PBXBuildFile; fileRef = F1245B93175A524100D44C51 /* babel.png */; };
-		F1245B9A175A5EEB00D44C51 /* BBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1245B99175A5EEA00D44C51 /* BBModel.m */; };
 		F1245B9D175A5F0A00D44C51 /* BBTodo.m in Sources */ = {isa = PBXBuildFile; fileRef = F1245B9C175A5F0900D44C51 /* BBTodo.m */; };
 		F1245BA3175A648700D44C51 /* BBDateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F1245BA2175A648600D44C51 /* BBDateUtils.m */; };
 		F1245BA9175A7B5800D44C51 /* BBRecentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1245BA7175A7B5700D44C51 /* BBRecentsTableViewController.m */; };
 		F1245BAA175A7B5800D44C51 /* BBRecentsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1245BA8175A7B5700D44C51 /* BBRecentsTableViewController.xib */; };
-		F1245BAD175A7F9800D44C51 /* Application.strings in Resources */ = {isa = PBXBuildFile; fileRef = F1245BAB175A7F9800D44C51 /* Application.strings */; };
 		F1245BB6175B44C500D44C51 /* About.png in Resources */ = {isa = PBXBuildFile; fileRef = F1245BB5175B44C500D44C51 /* About.png */; };
 		F1245BB8175B44CD00D44C51 /* Todos.png in Resources */ = {isa = PBXBuildFile; fileRef = F1245BB7175B44CD00D44C51 /* Todos.png */; };
+		F1245BBB175B5EA400D44C51 /* BBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1245BBA175B5EA400D44C51 /* BBModel.m */; };
+		F1245BBE175B5ED400D44C51 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F1245BBC175B5ED300D44C51 /* Localizable.strings */; };
 		F14F803B175336D000D379EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F14F803A175336D000D379EF /* UIKit.framework */; };
 		F14F803D175336D000D379EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F14F803C175336D000D379EF /* Foundation.framework */; };
 		F14F803F175336D000D379EF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F14F803E175336D000D379EF /* CoreGraphics.framework */; };
@@ -38,8 +38,6 @@
 		F14F80781753377A00D379EF /* BBTodosTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F14F80761753377A00D379EF /* BBTodosTableViewController.xib */; };
 		F14F8094175A3D9C00D379EF /* BBCreateTodoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F14F8092175A3D9C00D379EF /* BBCreateTodoViewController.m */; };
 		F14F8095175A3D9C00D379EF /* BBCreateTodoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F14F8093175A3D9C00D379EF /* BBCreateTodoViewController.xib */; };
-		F14F8099175A3DBA00D379EF /* BBTodoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F14F8097175A3DBA00D379EF /* BBTodoDetailViewController.m */; };
-		F14F809A175A3DBA00D379EF /* BBTodoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F14F8098175A3DBA00D379EF /* BBTodoDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +57,6 @@
 		F1245B8F175A510000D44C51 /* BBAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBAboutViewController.m; sourceTree = "<group>"; };
 		F1245B90175A510000D44C51 /* BBAboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BBAboutViewController.xib; sourceTree = "<group>"; };
 		F1245B93175A524100D44C51 /* babel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = babel.png; sourceTree = "<group>"; };
-		F1245B98175A5EEA00D44C51 /* BBModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBModel.h; path = ../BBModel.h; sourceTree = "<group>"; };
-		F1245B99175A5EEA00D44C51 /* BBModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBModel.m; path = ../BBModel.m; sourceTree = "<group>"; };
 		F1245B9B175A5F0900D44C51 /* BBTodo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTodo.h; sourceTree = "<group>"; };
 		F1245B9C175A5F0900D44C51 /* BBTodo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTodo.m; sourceTree = "<group>"; };
 		F1245BA1175A648600D44C51 /* BBDateUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBDateUtils.h; sourceTree = "<group>"; };
@@ -68,16 +64,18 @@
 		F1245BA6175A7B5600D44C51 /* BBRecentsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBRecentsTableViewController.h; sourceTree = "<group>"; };
 		F1245BA7175A7B5700D44C51 /* BBRecentsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBRecentsTableViewController.m; sourceTree = "<group>"; };
 		F1245BA8175A7B5700D44C51 /* BBRecentsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BBRecentsTableViewController.xib; sourceTree = "<group>"; };
-		F1245BAC175A7F9800D44C51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Application.strings; sourceTree = "<group>"; };
-		F1245BAE175A7FAB00D44C51 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Application.strings; sourceTree = "<group>"; };
-		F1245BAF175A7FB800D44C51 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Application.strings; sourceTree = "<group>"; };
 		F1245BB0175A7FB800D44C51 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F1245BB1175A7FB800D44C51 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F1245BB2175A7FC100D44C51 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Application.strings; sourceTree = "<group>"; };
 		F1245BB3175A7FC100D44C51 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F1245BB4175A7FC100D44C51 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F1245BB5175B44C500D44C51 /* About.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = About.png; sourceTree = "<group>"; };
 		F1245BB7175B44CD00D44C51 /* Todos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Todos.png; sourceTree = "<group>"; };
+		F1245BB9175B5EA300D44C51 /* BBModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBModel.h; sourceTree = "<group>"; };
+		F1245BBA175B5EA400D44C51 /* BBModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBModel.m; sourceTree = "<group>"; };
+		F1245BBD175B5ED400D44C51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F1245BBF175B5EDC00D44C51 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F1245BC0175B5EDD00D44C51 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F1245BC1175B5EDE00D44C51 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F14F8037175336D000D379EF /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F14F803A175336D000D379EF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F14F803C175336D000D379EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -103,9 +101,6 @@
 		F14F8091175A3D9C00D379EF /* BBCreateTodoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBCreateTodoViewController.h; sourceTree = "<group>"; };
 		F14F8092175A3D9C00D379EF /* BBCreateTodoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBCreateTodoViewController.m; sourceTree = "<group>"; };
 		F14F8093175A3D9C00D379EF /* BBCreateTodoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BBCreateTodoViewController.xib; sourceTree = "<group>"; };
-		F14F8096175A3DBA00D379EF /* BBTodoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTodoDetailViewController.h; sourceTree = "<group>"; };
-		F14F8097175A3DBA00D379EF /* BBTodoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTodoDetailViewController.m; sourceTree = "<group>"; };
-		F14F8098175A3DBA00D379EF /* BBTodoDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BBTodoDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,8 +163,8 @@
 				F14F8079175A336600D379EF /* Icons */,
 				F1245BA1175A648600D44C51 /* BBDateUtils.h */,
 				F1245BA2175A648600D44C51 /* BBDateUtils.m */,
-				F1245B98175A5EEA00D44C51 /* BBModel.h */,
-				F1245B99175A5EEA00D44C51 /* BBModel.m */,
+				F1245BB9175B5EA300D44C51 /* BBModel.h */,
+				F1245BBA175B5EA400D44C51 /* BBModel.m */,
 				F1245B9B175A5F0900D44C51 /* BBTodo.h */,
 				F1245B9C175A5F0900D44C51 /* BBTodo.m */,
 				F14F8049175336D000D379EF /* BBAppDelegate.h */,
@@ -183,9 +178,6 @@
 				F14F8091175A3D9C00D379EF /* BBCreateTodoViewController.h */,
 				F14F8092175A3D9C00D379EF /* BBCreateTodoViewController.m */,
 				F14F8093175A3D9C00D379EF /* BBCreateTodoViewController.xib */,
-				F14F8096175A3DBA00D379EF /* BBTodoDetailViewController.h */,
-				F14F8097175A3DBA00D379EF /* BBTodoDetailViewController.m */,
-				F14F8098175A3DBA00D379EF /* BBTodoDetailViewController.xib */,
 				F1245B81175A41D800D44C51 /* BBTodoTitleTableViewCell.xib */,
 				F1245B86175A427800D44C51 /* BBTodoDateTableViewCell.xib */,
 				F1245B8E175A510000D44C51 /* BBAboutViewController.h */,
@@ -199,7 +191,7 @@
 		F14F8041175336D000D379EF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F1245BAB175A7F9800D44C51 /* Application.strings */,
+				F1245BBC175B5ED300D44C51 /* Localizable.strings */,
 				F14F8042175336D000D379EF /* TodoList-Info.plist */,
 				F14F8043175336D000D379EF /* InfoPlist.strings */,
 				F14F8046175336D000D379EF /* main.m */,
@@ -321,15 +313,14 @@
 				F14F8051175336D000D379EF /* Default-568h@2x.png in Resources */,
 				F14F80781753377A00D379EF /* BBTodosTableViewController.xib in Resources */,
 				F14F8095175A3D9C00D379EF /* BBCreateTodoViewController.xib in Resources */,
-				F14F809A175A3DBA00D379EF /* BBTodoDetailViewController.xib in Resources */,
 				F1245B83175A41D800D44C51 /* BBTodoTitleTableViewCell.xib in Resources */,
 				F1245B88175A427800D44C51 /* BBTodoDateTableViewCell.xib in Resources */,
 				F1245B92175A510000D44C51 /* BBAboutViewController.xib in Resources */,
 				F1245B94175A524100D44C51 /* babel.png in Resources */,
 				F1245BAA175A7B5800D44C51 /* BBRecentsTableViewController.xib in Resources */,
-				F1245BAD175A7F9800D44C51 /* Application.strings in Resources */,
 				F1245BB6175B44C500D44C51 /* About.png in Resources */,
 				F1245BB8175B44CD00D44C51 /* Todos.png in Resources */,
+				F1245BBE175B5ED400D44C51 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,12 +359,11 @@
 				F14F804B175336D000D379EF /* BBAppDelegate.m in Sources */,
 				F14F80771753377A00D379EF /* BBTodosTableViewController.m in Sources */,
 				F14F8094175A3D9C00D379EF /* BBCreateTodoViewController.m in Sources */,
-				F14F8099175A3DBA00D379EF /* BBTodoDetailViewController.m in Sources */,
 				F1245B91175A510000D44C51 /* BBAboutViewController.m in Sources */,
-				F1245B9A175A5EEB00D44C51 /* BBModel.m in Sources */,
 				F1245B9D175A5F0A00D44C51 /* BBTodo.m in Sources */,
 				F1245BA3175A648700D44C51 /* BBDateUtils.m in Sources */,
 				F1245BA9175A7B5800D44C51 /* BBRecentsTableViewController.m in Sources */,
+				F1245BBB175B5EA400D44C51 /* BBModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,15 +386,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F1245BAB175A7F9800D44C51 /* Application.strings */ = {
+		F1245BBC175B5ED300D44C51 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F1245BAC175A7F9800D44C51 /* en */,
-				F1245BAE175A7FAB00D44C51 /* fr */,
-				F1245BAF175A7FB800D44C51 /* de */,
-				F1245BB2175A7FC100D44C51 /* es */,
+				F1245BBD175B5ED400D44C51 /* en */,
+				F1245BBF175B5EDC00D44C51 /* fr */,
+				F1245BC0175B5EDD00D44C51 /* de */,
+				F1245BC1175B5EDE00D44C51 /* es */,
 			);
-			name = Application.strings;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 		F14F8043175336D000D379EF /* InfoPlist.strings */ = {

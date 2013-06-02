@@ -21,7 +21,7 @@
 {
     [super viewDidLoad];
 
-    self.title = NSLocalizedStringFromTable(@"Recents", @"Application", nil);
+    self.title = NSLocalizedString(@"Recents", nil);
 
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(add)];
 }
