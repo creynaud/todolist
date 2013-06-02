@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		F1245B83175A41D800D44C51 /* BBTodoTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1245B81175A41D800D44C51 /* BBTodoTitleTableViewCell.xib */; };
 		F1245B88175A427800D44C51 /* BBTodoDateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1245B86175A427800D44C51 /* BBTodoDateTableViewCell.xib */; };
-		F1245B8D175A50D000D44C51 /* About.png in Resources */ = {isa = PBXBuildFile; fileRef = F1245B8C175A50D000D44C51 /* About.png */; };
 		F1245B91175A510000D44C51 /* BBAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1245B8F175A510000D44C51 /* BBAboutViewController.m */; };
 		F1245B92175A510000D44C51 /* BBAboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1245B90175A510000D44C51 /* BBAboutViewController.xib */; };
 		F1245B94175A524100D44C51 /* babel.png in Resources */ = {isa = PBXBuildFile; fileRef = F1245B93175A524100D44C51 /* babel.png */; };
@@ -19,6 +18,8 @@
 		F1245BA9175A7B5800D44C51 /* BBRecentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1245BA7175A7B5700D44C51 /* BBRecentsTableViewController.m */; };
 		F1245BAA175A7B5800D44C51 /* BBRecentsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1245BA8175A7B5700D44C51 /* BBRecentsTableViewController.xib */; };
 		F1245BAD175A7F9800D44C51 /* Application.strings in Resources */ = {isa = PBXBuildFile; fileRef = F1245BAB175A7F9800D44C51 /* Application.strings */; };
+		F1245BB6175B44C500D44C51 /* About.png in Resources */ = {isa = PBXBuildFile; fileRef = F1245BB5175B44C500D44C51 /* About.png */; };
+		F1245BB8175B44CD00D44C51 /* Todos.png in Resources */ = {isa = PBXBuildFile; fileRef = F1245BB7175B44CD00D44C51 /* Todos.png */; };
 		F14F803B175336D000D379EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F14F803A175336D000D379EF /* UIKit.framework */; };
 		F14F803D175336D000D379EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F14F803C175336D000D379EF /* Foundation.framework */; };
 		F14F803F175336D000D379EF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F14F803E175336D000D379EF /* CoreGraphics.framework */; };
@@ -35,8 +36,6 @@
 		F14F8066175336D000D379EF /* TodoListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F14F8065175336D000D379EF /* TodoListTests.m */; };
 		F14F80771753377A00D379EF /* BBTodosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F14F80751753377A00D379EF /* BBTodosTableViewController.m */; };
 		F14F80781753377A00D379EF /* BBTodosTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F14F80761753377A00D379EF /* BBTodosTableViewController.xib */; };
-		F14F8081175A34F300D379EF /* Important.png in Resources */ = {isa = PBXBuildFile; fileRef = F14F8080175A34F300D379EF /* Important.png */; };
-		F14F808B175A362B00D379EF /* Todos.png in Resources */ = {isa = PBXBuildFile; fileRef = F14F808A175A362B00D379EF /* Todos.png */; };
 		F14F8094175A3D9C00D379EF /* BBCreateTodoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F14F8092175A3D9C00D379EF /* BBCreateTodoViewController.m */; };
 		F14F8095175A3D9C00D379EF /* BBCreateTodoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F14F8093175A3D9C00D379EF /* BBCreateTodoViewController.xib */; };
 		F14F8099175A3DBA00D379EF /* BBTodoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F14F8097175A3DBA00D379EF /* BBTodoDetailViewController.m */; };
@@ -56,7 +55,6 @@
 /* Begin PBXFileReference section */
 		F1245B81175A41D800D44C51 /* BBTodoTitleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BBTodoTitleTableViewCell.xib; sourceTree = "<group>"; };
 		F1245B86175A427800D44C51 /* BBTodoDateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BBTodoDateTableViewCell.xib; sourceTree = "<group>"; };
-		F1245B8C175A50D000D44C51 /* About.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = About.png; sourceTree = "<group>"; };
 		F1245B8E175A510000D44C51 /* BBAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBAboutViewController.h; sourceTree = "<group>"; };
 		F1245B8F175A510000D44C51 /* BBAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBAboutViewController.m; sourceTree = "<group>"; };
 		F1245B90175A510000D44C51 /* BBAboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BBAboutViewController.xib; sourceTree = "<group>"; };
@@ -78,6 +76,8 @@
 		F1245BB2175A7FC100D44C51 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Application.strings; sourceTree = "<group>"; };
 		F1245BB3175A7FC100D44C51 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F1245BB4175A7FC100D44C51 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F1245BB5175B44C500D44C51 /* About.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = About.png; sourceTree = "<group>"; };
+		F1245BB7175B44CD00D44C51 /* Todos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Todos.png; sourceTree = "<group>"; };
 		F14F8037175336D000D379EF /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F14F803A175336D000D379EF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F14F803C175336D000D379EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -100,8 +100,6 @@
 		F14F80741753377A00D379EF /* BBTodosTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTodosTableViewController.h; sourceTree = "<group>"; };
 		F14F80751753377A00D379EF /* BBTodosTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTodosTableViewController.m; sourceTree = "<group>"; };
 		F14F80761753377A00D379EF /* BBTodosTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BBTodosTableViewController.xib; sourceTree = "<group>"; };
-		F14F8080175A34F300D379EF /* Important.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Important.png; sourceTree = "<group>"; };
-		F14F808A175A362B00D379EF /* Todos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Todos.png; sourceTree = "<group>"; };
 		F14F8091175A3D9C00D379EF /* BBCreateTodoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBCreateTodoViewController.h; sourceTree = "<group>"; };
 		F14F8092175A3D9C00D379EF /* BBCreateTodoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBCreateTodoViewController.m; sourceTree = "<group>"; };
 		F14F8093175A3D9C00D379EF /* BBCreateTodoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BBCreateTodoViewController.xib; sourceTree = "<group>"; };
@@ -235,10 +233,9 @@
 		F14F8079175A336600D379EF /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				F1245BB7175B44CD00D44C51 /* Todos.png */,
+				F1245BB5175B44C500D44C51 /* About.png */,
 				F1245B93175A524100D44C51 /* babel.png */,
-				F1245B8C175A50D000D44C51 /* About.png */,
-				F14F808A175A362B00D379EF /* Todos.png */,
-				F14F8080175A34F300D379EF /* Important.png */,
 			);
 			name = Icons;
 			sourceTree = "<group>";
@@ -323,17 +320,16 @@
 				F14F804F175336D000D379EF /* Default@2x.png in Resources */,
 				F14F8051175336D000D379EF /* Default-568h@2x.png in Resources */,
 				F14F80781753377A00D379EF /* BBTodosTableViewController.xib in Resources */,
-				F14F8081175A34F300D379EF /* Important.png in Resources */,
-				F14F808B175A362B00D379EF /* Todos.png in Resources */,
 				F14F8095175A3D9C00D379EF /* BBCreateTodoViewController.xib in Resources */,
 				F14F809A175A3DBA00D379EF /* BBTodoDetailViewController.xib in Resources */,
 				F1245B83175A41D800D44C51 /* BBTodoTitleTableViewCell.xib in Resources */,
 				F1245B88175A427800D44C51 /* BBTodoDateTableViewCell.xib in Resources */,
-				F1245B8D175A50D000D44C51 /* About.png in Resources */,
 				F1245B92175A510000D44C51 /* BBAboutViewController.xib in Resources */,
 				F1245B94175A524100D44C51 /* babel.png in Resources */,
 				F1245BAA175A7B5800D44C51 /* BBRecentsTableViewController.xib in Resources */,
 				F1245BAD175A7F9800D44C51 /* Application.strings in Resources */,
+				F1245BB6175B44C500D44C51 /* About.png in Resources */,
+				F1245BB8175B44CD00D44C51 /* Todos.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
