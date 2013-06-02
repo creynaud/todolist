@@ -20,6 +20,8 @@
 		F1245BB8175B44CD00D44C51 /* Todos.png in Resources */ = {isa = PBXBuildFile; fileRef = F1245BB7175B44CD00D44C51 /* Todos.png */; };
 		F1245BBB175B5EA400D44C51 /* BBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1245BBA175B5EA400D44C51 /* BBModel.m */; };
 		F1245BBE175B5ED400D44C51 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F1245BBC175B5ED300D44C51 /* Localizable.strings */; };
+		F1245BCF175B680800D44C51 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F1245BCD175B680800D44C51 /* Icon.png */; };
+		F1245BD0175B680800D44C51 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F1245BCE175B680800D44C51 /* Icon@2x.png */; };
 		F14F803B175336D000D379EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F14F803A175336D000D379EF /* UIKit.framework */; };
 		F14F803D175336D000D379EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F14F803C175336D000D379EF /* Foundation.framework */; };
 		F14F803F175336D000D379EF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F14F803E175336D000D379EF /* CoreGraphics.framework */; };
@@ -72,6 +74,8 @@
 		F1245BBF175B5EDC00D44C51 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F1245BC2175B60BB00D44C51 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F1245BC3175B60C100D44C51 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F1245BCD175B680800D44C51 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		F1245BCE175B680800D44C51 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		F14F8037175336D000D379EF /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F14F803A175336D000D379EF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F14F803C175336D000D379EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -221,6 +225,8 @@
 		F14F8079175A336600D379EF /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				F1245BCD175B680800D44C51 /* Icon.png */,
+				F1245BCE175B680800D44C51 /* Icon@2x.png */,
 				F1245BB7175B44CD00D44C51 /* Todos.png */,
 				F1245BB5175B44C500D44C51 /* About.png */,
 				F1245B93175A524100D44C51 /* babel.png */,
@@ -317,6 +323,8 @@
 				F1245BB6175B44C500D44C51 /* About.png in Resources */,
 				F1245BB8175B44CD00D44C51 /* Todos.png in Resources */,
 				F1245BBE175B5ED400D44C51 /* Localizable.strings in Resources */,
+				F1245BCF175B680800D44C51 /* Icon.png in Resources */,
+				F1245BD0175B680800D44C51 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
