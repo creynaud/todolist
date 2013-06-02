@@ -64,9 +64,7 @@
 		F1245BA6175A7B5600D44C51 /* BBRecentsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBRecentsTableViewController.h; sourceTree = "<group>"; };
 		F1245BA7175A7B5700D44C51 /* BBRecentsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBRecentsTableViewController.m; sourceTree = "<group>"; };
 		F1245BA8175A7B5700D44C51 /* BBRecentsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BBRecentsTableViewController.xib; sourceTree = "<group>"; };
-		F1245BB0175A7FB800D44C51 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F1245BB1175A7FB800D44C51 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F1245BB3175A7FC100D44C51 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F1245BB4175A7FC100D44C51 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F1245BB5175B44C500D44C51 /* About.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = About.png; sourceTree = "<group>"; };
 		F1245BB7175B44CD00D44C51 /* Todos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Todos.png; sourceTree = "<group>"; };
@@ -401,8 +399,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				F14F8044175336D000D379EF /* en */,
-				F1245BB0175A7FB800D44C51 /* de */,
-				F1245BB3175A7FC100D44C51 /* es */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
