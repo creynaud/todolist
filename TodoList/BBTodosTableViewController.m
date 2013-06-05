@@ -94,7 +94,7 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
 
     BBTodo *todo = nil;
@@ -118,7 +118,6 @@
 
     // Configure the cell...
     cell.textLabel.text = todo.description;
-    cell.detailTextLabel.text = [BBDateUtils shortLocalizedStringFromDate:todo.dueDate];
     cell.userInteractionEnabled = YES;
 
     return cell;
