@@ -57,7 +57,8 @@
     return 4;
 }
 
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
     switch (section) {
         case OVERDUE_SECTION:
             return NSLocalizedString(@"Overdue", nil);

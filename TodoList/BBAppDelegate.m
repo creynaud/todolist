@@ -23,6 +23,9 @@
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     NSMutableArray *tabControllers = [NSMutableArray array];
 
+    [[UINavigationBar appearance] setTintColor:[UIColor redColor]];
+    [[UITableViewHeaderFooterView appearance] setTintColor:[UIColor darkGrayColor]];
+
     // Todos
     BBTodosTableViewController *todosTableViewController = [[BBTodosTableViewController alloc] initWithNibName:@"BBTodosTableViewController" bundle:nil];
     UINavigationController *todosNavigationController = [[UINavigationController alloc] initWithRootViewController:todosTableViewController];
