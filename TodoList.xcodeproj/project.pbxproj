@@ -101,6 +101,8 @@
 		F14F8091175A3D9C00D379EF /* BBCreateTodoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBCreateTodoViewController.h; sourceTree = "<group>"; };
 		F14F8092175A3D9C00D379EF /* BBCreateTodoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBCreateTodoViewController.m; sourceTree = "<group>"; };
 		F14F8093175A3D9C00D379EF /* BBCreateTodoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BBCreateTodoViewController.xib; sourceTree = "<group>"; };
+		F1688DAD17C4F0C600489F6B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		F1688DAE17C4F0CE00489F6B /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -292,6 +294,8 @@
 				fr,
 				de,
 				es,
+				"zh-Hans",
+				"zh-Hant",
 			);
 			mainGroup = F14F802E175336D000D379EF;
 			productRefGroup = F14F8038175336D000D379EF /* Products */;
@@ -397,6 +401,8 @@
 				F1245BBF175B5EDC00D44C51 /* fr */,
 				F1245BC2175B60BB00D44C51 /* de */,
 				F1245BC3175B60C100D44C51 /* es */,
+				F1688DAD17C4F0C600489F6B /* zh-Hans */,
+				F1688DAE17C4F0CE00489F6B /* zh-Hant */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
